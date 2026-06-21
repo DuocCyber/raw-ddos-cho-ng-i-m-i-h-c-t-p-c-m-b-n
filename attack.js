@@ -1,6 +1,3 @@
-// DDoS RAW – Node.js, không proxy, dùng cluster
-// Cách dùng: node attack.js https://example.com 60
-
 const net = require('net');
 const tls = require('tls');
 const cluster = require('cluster');
