@@ -22,7 +22,7 @@ All Rights Reserved © 2026
 console.log(`Target: ${target}`);
 console.log(`Thời gian: ${seconds}s`);
 console.log(`Số worker: ${os.cpus().length}`);
-console.log('Đang tấn công... (RPS sẽ hiển thị mỗi giây)\n');
+console.log('Đang tấn công... (RPS )\n');
 
 const { hostname, port = 443, protocol, pathname = '/' } = new URL(target);
 const isHttps = protocol === 'https:';
